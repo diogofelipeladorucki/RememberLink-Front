@@ -9,3 +9,5 @@ C:\Users\Diogo\source\repos\RememberLink\obj\Debug\RememberLink.exe
 C:\Users\Diogo\source\repos\RememberLink\obj\Debug\RememberLink.pdb
 C:\Users\Diogo\source\repos\RememberLink\obj\Debug\RememberLink.Form1.resources
 C:\Users\Diogo\source\repos\RememberLink\obj\Debug\RememberLink.Home.resources
+C:\Users\Diogo\source\repos\RememberLink\obj\Debug\RememberLink.Link.resources
+C:\Users\Diogo\source\repos\RememberLink\obj\Debug\RememberLink.CriarCategoria.resources

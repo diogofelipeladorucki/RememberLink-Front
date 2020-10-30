@@ -17,6 +17,19 @@ namespace RememberLink
         public Form1()
         {
             InitializeComponent();
+            //this.email.Text = "Enter text here...";
+
+            if (this.email.Text == "Enter text here...")
+            {
+                this.email.Text = "";
+            }
+
+            if (string.IsNullOrWhiteSpace(this.email.Text)) 
+            { 
+                this.email.Text = "Enter text here...";
+            }
+
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -54,6 +67,23 @@ namespace RememberLink
         private void abrirHome(object obj)
         {
             Application.Run(new Home());
+            //Application.Run(new Link());
+
         }
+
+        public void RemoveText(object sender, EventArgs e)
+        {
+            if (this.Text == "Enter text here...")
+            {
+                this.Text = "";
+            }
+        }
+
+        public void AddText(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(this.Text))
+                this.Text = "Enter text here...";
+        }
+
     }
 }
