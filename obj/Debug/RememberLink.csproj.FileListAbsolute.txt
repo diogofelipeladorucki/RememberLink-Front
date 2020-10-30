@@ -1,0 +1,11 @@
+C:\Users\Diogo\source\repos\RememberLink\bin\Debug\RememberLink.exe.config
+C:\Users\Diogo\source\repos\RememberLink\bin\Debug\RememberLink.exe
+C:\Users\Diogo\source\repos\RememberLink\bin\Debug\RememberLink.pdb
+C:\Users\Diogo\source\repos\RememberLink\obj\Debug\RememberLink.csprojAssemblyReference.cache
+C:\Users\Diogo\source\repos\RememberLink\obj\Debug\RememberLink.Properties.Resources.resources
+C:\Users\Diogo\source\repos\RememberLink\obj\Debug\RememberLink.csproj.GenerateResource.cache
+C:\Users\Diogo\source\repos\RememberLink\obj\Debug\RememberLink.csproj.CoreCompileInputs.cache
+C:\Users\Diogo\source\repos\RememberLink\obj\Debug\RememberLink.exe
+C:\Users\Diogo\source\repos\RememberLink\obj\Debug\RememberLink.pdb
+C:\Users\Diogo\source\repos\RememberLink\obj\Debug\RememberLink.Form1.resources
+C:\Users\Diogo\source\repos\RememberLink\obj\Debug\RememberLink.Home.resources
