@@ -11,3 +11,16 @@ C:\Users\Diogo\source\repos\RememberLink\obj\Debug\RememberLink.Form1.resources
 C:\Users\Diogo\source\repos\RememberLink\obj\Debug\RememberLink.Home.resources
 C:\Users\Diogo\source\repos\RememberLink\obj\Debug\RememberLink.Link.resources
 C:\Users\Diogo\source\repos\RememberLink\obj\Debug\RememberLink.CriarCategoria.resources
+C:\Users\emily\Source\Repos\RememberLink-Front\bin\Debug\RememberLink.exe.config
+C:\Users\emily\Source\Repos\RememberLink-Front\bin\Debug\RememberLink.exe
+C:\Users\emily\Source\Repos\RememberLink-Front\bin\Debug\RememberLink.pdb
+C:\Users\emily\Source\Repos\RememberLink-Front\obj\Debug\RememberLink.csprojAssemblyReference.cache
+C:\Users\emily\Source\Repos\RememberLink-Front\obj\Debug\RememberLink.CriarCategoria.resources
+C:\Users\emily\Source\Repos\RememberLink-Front\obj\Debug\RememberLink.Form1.resources
+C:\Users\emily\Source\Repos\RememberLink-Front\obj\Debug\RememberLink.Home.resources
+C:\Users\emily\Source\Repos\RememberLink-Front\obj\Debug\RememberLink.Link.resources
+C:\Users\emily\Source\Repos\RememberLink-Front\obj\Debug\RememberLink.Properties.Resources.resources
+C:\Users\emily\Source\Repos\RememberLink-Front\obj\Debug\RememberLink.csproj.GenerateResource.cache
+C:\Users\emily\Source\Repos\RememberLink-Front\obj\Debug\RememberLink.csproj.CoreCompileInputs.cache
+C:\Users\emily\Source\Repos\RememberLink-Front\obj\Debug\RememberLink.exe
+C:\Users\emily\Source\Repos\RememberLink-Front\obj\Debug\RememberLink.pdb

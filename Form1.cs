@@ -19,6 +19,7 @@ namespace RememberLink
             InitializeComponent();
             //this.email.Text = "Enter text here...";
 
+            /*
             if (this.email.Text == "Enter text here...")
             {
                 this.email.Text = "";
@@ -28,6 +29,7 @@ namespace RememberLink
             { 
                 this.email.Text = "Enter text here...";
             }
+            */
 
 
         }
