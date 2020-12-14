@@ -45,3 +45,4 @@ C:\Users\Emanuel Augusto\Desktop\DIOGO\RememberLink-Front\obj\Debug\RememberLink
 C:\Users\Emanuel Augusto\Desktop\DIOGO\RememberLink-Front\obj\Debug\RememberLink.login.resources
 C:\Users\Emanuel Augusto\Desktop\DIOGO\RememberLink-Front\obj\Debug\RememberLink.criarLink.resources
 C:\Users\Emanuel Augusto\Desktop\DIOGO\RememberLink-Front\obj\Debug\RememberLink.CATEGORIA.resources
+C:\Users\Emanuel Augusto\Desktop\DIOGO\RememberLink-Front\obj\Debug\RememberLink.createAccount.resources

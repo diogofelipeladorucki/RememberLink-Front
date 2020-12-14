@@ -16,6 +16,7 @@ namespace RememberLink
 {
     public partial class CATEGORIA : Form
     {
+        string idToDelete;
         public CATEGORIA()
         {
             InitializeComponent();
@@ -29,6 +30,7 @@ namespace RememberLink
 
         private async void GetAllCategorias()
         {
+
 
             try
             {
@@ -63,17 +65,7 @@ namespace RememberLink
             {
                 MessageBox.Show(e.ToString(), "Erro");
             }
-            DataGridViewButtonColumn button = new DataGridViewButtonColumn();
-            {
-                button.Name = "SEE";
-                button.HeaderText = "AÇÕES";
-                button.Text = "VER CATEGORIA";
-                button.FlatStyle = FlatStyle.Flat;
-                button.DefaultCellStyle.BackColor = Color.Red;
-                button.DefaultCellStyle.ForeColor = Color.White;
-                button.UseColumnTextForButtonValue = true;
-                this.dataGridView1.Columns.Add(button);
-            }
+
             /*DataGridViewButtonColumn button2 = new DataGridViewButtonColumn();
             {
                 button2.Name = "EDITAR";
@@ -111,38 +103,79 @@ namespace RememberLink
 
         private void button2_Click(object sender, EventArgs e)
         {
+            dataGridView1.DataSource = null;
             GetAllCategorias();
         }
 
          private void dataGridView1_CellContentClick(object sender,DataGridViewCellEventArgs e)
         {
 
-            DialogResult dialogResult = MessageBox.Show(e.ColumnIndex.ToString(), "AVISO", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            /*if (e.ColumnIndex == 8) //make sure button index here
-            {
-                string value = dataGridView1.CurrentRow.Cells["ID"].Value.ToString();
-                //MessageBox.Show("DEBUG   " + value);
-                DialogResult dialogResult = MessageBox.Show("Deseja realmente apagar este funcionário?", "AVISO", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-                if (dialogResult == DialogResult.Yes)
-                {
-                    //deleteEmplyees(value);
-                }
-            }*/
 
         }
 
         private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex.ToString() == "3") {
+            string value = dataGridView1.CurrentRow.Cells["_id"].Value.ToString();
+            string color = dataGridView1.CurrentRow.Cells["color"].Value.ToString();
+            string descriptionCategory = dataGridView1.CurrentRow.Cells["descriptionCategory"].Value.ToString();
+            idToDelete = value;
 
-                string value = dataGridView1.CurrentRow.Cells["_id"].Value.ToString();
-                string color = dataGridView1.CurrentRow.Cells["color"].Value.ToString();
-
-                Home home = new Home(value, color);
+            if (e.ColumnIndex.ToString() == "2")
+            {
+                Home home = new Home(value, color, descriptionCategory);
                 home.Show();
             }
             
+        }
+
+        private async void delete()
+        {
+            try
+            {
+                string URL = "http://localhost:3000/api/category/" + idToDelete;
+
+                using (var client = new HttpClient())
+                {
+                    UserPersist data = new UserPersist();
+                    var token = data.getTokenUser();
+                    client.DefaultRequestHeaders.Add("Authorization", "Bearer " + token);
+
+                    using (var response = await client.DeleteAsync(URL))
+                    {
+                        if (response.IsSuccessStatusCode)
+                        {
+
+                            var dataResponse = await response.Content.ReadAsStringAsync();
+
+                            responseCreateAccount myDeserializedClass = JsonConvert.DeserializeObject<responseCreateAccount>(dataResponse);
+
+                            MessageBox.Show(myDeserializedClass.msg, "AVISO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                            GetAllCategorias();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Selecione uma Categoria para exluir!");
+                        }
+                    }
+                }
+            }
+            catch (ArgumentException e)
+            {
+                MessageBox.Show("Selecione uma Categoria para exluir!");
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (idToDelete == "")
+            {
+                MessageBox.Show("Selecione uma categoria para excluir!", "AVISO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                delete();
+            }
         }
     }
 }

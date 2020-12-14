@@ -16,13 +16,16 @@ namespace RememberLink
 {
     public partial class Home : Form
     {
+        string idToDelete;
         string decide;
         string colorBack;
-        public Home(string id, string color)
+        string nameCategory;
+        public Home(string id, string color, string nameCategoryto)
         {
             InitializeComponent();
             decide = id;
             colorBack = color;
+            nameCategory = nameCategoryto;
             this.BackColor = ColorTranslator.FromHtml(color);
             GetAllnotes();
 
@@ -72,7 +75,7 @@ namespace RememberLink
                             
                             var objData = JsonConvert.DeserializeObject<List<LinksNotes>>(dataResponse);
 
-                            label1.Text = objData[0].category.descriptionCategory;
+                            label1.Text = nameCategory;
 
                             dataGridView1.DataSource = objData;
                         }
@@ -87,39 +90,44 @@ namespace RememberLink
             {
                 MessageBox.Show(e.ToString(), "Erro");
             }
-            /*DataGridViewButtonColumn button = new DataGridViewButtonColumn();
+        }
+
+        private async void delete()
+        {
+            try
             {
-                button.Name = "APAGAR";
-                button.HeaderText = "APAGAR";
-                button.Text = "APAGAR";
-                button.FlatStyle = FlatStyle.Flat;
-                button.DefaultCellStyle.BackColor = Color.Red;
-                button.DefaultCellStyle.ForeColor = Color.White;
-                button.UseColumnTextForButtonValue = true;
-                this.dataGridView1.Columns.Add(button);
+                string URL = "http://localhost:3000/api/link/" + idToDelete;
+
+                using (var client = new HttpClient())
+                {
+                    UserPersist data = new UserPersist();
+                    var token = data.getTokenUser();
+                    client.DefaultRequestHeaders.Add("Authorization", "Bearer " + token);
+
+                    using (var response = await client.DeleteAsync(URL))
+                    {
+                        if (response.IsSuccessStatusCode)
+                        {
+
+                            var dataResponse = await response.Content.ReadAsStringAsync();
+
+                            responseCreateAccount myDeserializedClass = JsonConvert.DeserializeObject<responseCreateAccount>(dataResponse);
+
+                            MessageBox.Show(myDeserializedClass.msg, "AVISO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                            GetAllnotes();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Selecione um link para exluir!");
+                        }
+                    }
+                }
             }
-            DataGridViewButtonColumn button2 = new DataGridViewButtonColumn();
+            catch (ArgumentException e)
             {
-                button2.Name = "EDITAR";
-                button2.HeaderText = "EDITAR";
-                button2.Text = "EDITAR";
-                button2.FlatStyle = FlatStyle.Flat;
-                button2.DefaultCellStyle.BackColor = Color.Blue;
-                button2.DefaultCellStyle.ForeColor = Color.White;
-                button2.UseColumnTextForButtonValue = true;
-                this.dataGridView1.Columns.Add(button2);
+                MessageBox.Show("Selecione um link para exluir!");
             }
-            DataGridViewButtonColumn button3 = new DataGridViewButtonColumn();
-            {
-                button3.Name = "DETALHAR";
-                button3.HeaderText = "DETALHAR";
-                button3.Text = "DETALHAR";
-                button3.FlatStyle = FlatStyle.Flat;
-                button3.DefaultCellStyle.BackColor = Color.Blue;
-                button3.DefaultCellStyle.ForeColor = Color.White;
-                button3.UseColumnTextForButtonValue = true;
-                this.dataGridView1.Columns.Add(button3);
-            }*/
         }
 
         private void Home_Load(object sender, EventArgs e)
@@ -136,6 +144,26 @@ namespace RememberLink
         {
             criarLink link = new criarLink(decide);
             link.Show();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            if(idToDelete == "")
+            {
+                MessageBox.Show("Selecione um link para excluir!", "AVISO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+            delete();
+            }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string value = dataGridView1.CurrentRow.Cells["_id"].Value.ToString();
+
+            idToDelete = value;
+
         }
     }
 }

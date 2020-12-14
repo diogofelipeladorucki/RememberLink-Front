@@ -22,17 +22,18 @@ namespace RememberLink.Models
 
     public class LinksNotes
     {
+        [DisplayName("ID")]
         public string _id { get; set; }
 
-        [DisplayName("NOME")]
+        [DisplayName("TÍTULO")]
         public string titleLink { get; set; }
+
+        [DisplayName("LINK")]
         public string link { get; set; }
+
+        [DisplayName("DESCRIÇÃO")]
         public string descriptionLink { get; set; }
 
-        [AmbientValue("descriptionCategory")]
-        public Category category { get; set; }
-        public string idUser { get; set; }
-        public int __v { get; set; }
     }
 
     public class LinksNotesRequest
