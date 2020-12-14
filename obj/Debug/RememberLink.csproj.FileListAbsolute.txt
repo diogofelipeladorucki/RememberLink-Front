@@ -24,3 +24,24 @@ C:\Users\emily\Source\Repos\RememberLink-Front\obj\Debug\RememberLink.csproj.Gen
 C:\Users\emily\Source\Repos\RememberLink-Front\obj\Debug\RememberLink.csproj.CoreCompileInputs.cache
 C:\Users\emily\Source\Repos\RememberLink-Front\obj\Debug\RememberLink.exe
 C:\Users\emily\Source\Repos\RememberLink-Front\obj\Debug\RememberLink.pdb
+C:\Users\Emanuel Augusto\Desktop\DIOGO\RememberLink-Front\bin\Debug\RememberLink.exe.config
+C:\Users\Emanuel Augusto\Desktop\DIOGO\RememberLink-Front\bin\Debug\RememberLink.exe
+C:\Users\Emanuel Augusto\Desktop\DIOGO\RememberLink-Front\bin\Debug\RememberLink.pdb
+C:\Users\Emanuel Augusto\Desktop\DIOGO\RememberLink-Front\obj\Debug\RememberLink.csprojAssemblyReference.cache
+C:\Users\Emanuel Augusto\Desktop\DIOGO\RememberLink-Front\obj\Debug\RememberLink.CriarCategoria.resources
+C:\Users\Emanuel Augusto\Desktop\DIOGO\RememberLink-Front\obj\Debug\RememberLink.Home.resources
+C:\Users\Emanuel Augusto\Desktop\DIOGO\RememberLink-Front\obj\Debug\RememberLink.Link.resources
+C:\Users\Emanuel Augusto\Desktop\DIOGO\RememberLink-Front\obj\Debug\RememberLink.Properties.Resources.resources
+C:\Users\Emanuel Augusto\Desktop\DIOGO\RememberLink-Front\obj\Debug\RememberLink.csproj.GenerateResource.cache
+C:\Users\Emanuel Augusto\Desktop\DIOGO\RememberLink-Front\obj\Debug\RememberLink.exe
+C:\Users\Emanuel Augusto\Desktop\DIOGO\RememberLink-Front\obj\Debug\RememberLink.pdb
+C:\Users\Emanuel Augusto\Desktop\DIOGO\RememberLink-Front\bin\Debug\LocalStorage.dll
+C:\Users\Emanuel Augusto\Desktop\DIOGO\RememberLink-Front\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Emanuel Augusto\Desktop\DIOGO\RememberLink-Front\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Emanuel Augusto\Desktop\DIOGO\RememberLink-Front\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\Emanuel Augusto\Desktop\DIOGO\RememberLink-Front\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Emanuel Augusto\Desktop\DIOGO\RememberLink-Front\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Emanuel Augusto\Desktop\DIOGO\RememberLink-Front\obj\Debug\RememberLink.csproj.CopyComplete
+C:\Users\Emanuel Augusto\Desktop\DIOGO\RememberLink-Front\obj\Debug\RememberLink.login.resources
+C:\Users\Emanuel Augusto\Desktop\DIOGO\RememberLink-Front\obj\Debug\RememberLink.criarLink.resources
+C:\Users\Emanuel Augusto\Desktop\DIOGO\RememberLink-Front\obj\Debug\RememberLink.CATEGORIA.resources
