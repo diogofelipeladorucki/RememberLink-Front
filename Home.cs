@@ -16,7 +16,7 @@ namespace RememberLink
 {
     public partial class Home : Form
     {
-        string idToDelete;
+        string idToDelete = "";
         string decide;
         string colorBack;
         string nameCategory;
@@ -142,8 +142,9 @@ namespace RememberLink
 
         private void button3_Click(object sender, EventArgs e)
         {
-            criarLink link = new criarLink(decide);
+            criarLink link = new criarLink(decide, "");
             link.Show();
+            link.FormClosed += (s, args) => GetAllnotes();
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -164,6 +165,20 @@ namespace RememberLink
 
             idToDelete = value;
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (idToDelete == "")
+            {
+                MessageBox.Show("Selecione um link para atualizar!", "AVISO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                criarLink link = new criarLink(decide, idToDelete);
+                link.Show();
+                link.FormClosed += (s, args) => GetAllnotes();
+            }
         }
     }
 }

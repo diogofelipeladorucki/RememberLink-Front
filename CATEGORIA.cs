@@ -99,6 +99,7 @@ namespace RememberLink
         {
             CriarCategoria categoria = new CriarCategoria();
             categoria.Show();
+            categoria.FormClosed += (s, args) => GetAllCategorias();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -117,7 +118,7 @@ namespace RememberLink
         {
             string value = dataGridView1.CurrentRow.Cells["_id"].Value.ToString();
             string color = dataGridView1.CurrentRow.Cells["color"].Value.ToString();
-            string descriptionCategory = dataGridView1.CurrentRow.Cells["descriptionCategory"].Value.ToString();
+            string descriptionCategory = dataGridView1.CurrentRow.Cells["titleCategory"].Value.ToString();
             idToDelete = value;
 
             if (e.ColumnIndex.ToString() == "2")

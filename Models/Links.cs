@@ -15,6 +15,9 @@ namespace RememberLink.Models
         [DisplayName("COR")]
         public string color { get; set; }
 
+        [DisplayName("TÍTULO")]
+        public string titleCategory { get; set; }
+
         [DisplayName("DESCRIÇÃO")]
         public string descriptionCategory { get; set; }
 

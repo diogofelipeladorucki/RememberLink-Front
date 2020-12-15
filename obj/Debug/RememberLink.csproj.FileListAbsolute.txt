@@ -46,3 +46,7 @@ C:\Users\Emanuel Augusto\Desktop\DIOGO\RememberLink-Front\obj\Debug\RememberLink
 C:\Users\Emanuel Augusto\Desktop\DIOGO\RememberLink-Front\obj\Debug\RememberLink.criarLink.resources
 C:\Users\Emanuel Augusto\Desktop\DIOGO\RememberLink-Front\obj\Debug\RememberLink.CATEGORIA.resources
 C:\Users\Emanuel Augusto\Desktop\DIOGO\RememberLink-Front\obj\Debug\RememberLink.createAccount.resources
+C:\Users\Emanuel Augusto\Desktop\DIOGO\RememberLink-Front\bin\Debug\RememberLink.exe.manifest
+C:\Users\Emanuel Augusto\Desktop\DIOGO\RememberLink-Front\bin\Debug\RememberLink.application
+C:\Users\Emanuel Augusto\Desktop\DIOGO\RememberLink-Front\obj\Debug\RememberLink.exe.manifest
+C:\Users\Emanuel Augusto\Desktop\DIOGO\RememberLink-Front\obj\Debug\RememberLink.application

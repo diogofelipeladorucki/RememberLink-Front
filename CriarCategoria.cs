@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
@@ -38,11 +39,13 @@ namespace RememberLink
 
                 string URL = "http://localhost:3000/api/category";
 
-                string title = textBox3.Text;
+                string title = textBox1.Text;
+                string description = textBox3.Text;
                 string color = textBox2.Text;
 
                 Category category = new Category();
-                category.descriptionCategory = title;
+                category.titleCategory = title;
+                category.descriptionCategory = description;
                 category.color = color;
 
                 using (var client = new HttpClient())
@@ -104,6 +107,31 @@ namespace RememberLink
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ColorDialog MyDialog = new ColorDialog();
+            // Keeps the user from selecting a custom color.
+            MyDialog.AllowFullOpen = false;
+            // Allows the user to get help. (The default is false.)
+            MyDialog.ShowHelp = true;
+            // Sets the initial color select to the current text color.
+            MyDialog.Color = textBox2.ForeColor;
+
+            // Update the text box color if the user clicks OK 
+            if (MyDialog.ShowDialog() == DialogResult.OK)
+            {
+                var code = ColorTranslator.ToHtml(Color.FromArgb(MyDialog.Color.ToArgb()));
+                textBox2.Text = code;
+                // MessageBox.Show(ColorTranslator.ToHtml(Color.FromArgb(MyDialog.Color.ToArgb())));
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

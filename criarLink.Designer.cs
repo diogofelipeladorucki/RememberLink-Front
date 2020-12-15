@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(criarLink));
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -47,6 +48,7 @@
             this.label1.Size = new System.Drawing.Size(157, 39);
             this.label1.TabIndex = 0;
             this.label1.Text = "Criar Link";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // textBox1
             // 
@@ -69,7 +71,7 @@
             this.textBox3.Location = new System.Drawing.Point(12, 248);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(412, 60);
+            this.textBox3.Size = new System.Drawing.Size(412, 149);
             this.textBox3.TabIndex = 3;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
@@ -107,9 +109,9 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(171, 371);
+            this.button1.Location = new System.Drawing.Point(157, 403);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 36);
+            this.button1.Size = new System.Drawing.Size(123, 36);
             this.button1.TabIndex = 9;
             this.button1.Text = "Criar Link";
             this.button1.UseVisualStyleBackColor = true;
@@ -128,9 +130,10 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "criarLink";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "criarLink";
+            this.Text = "Criar Link";
             this.Load += new System.EventHandler(this.criarLink_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
