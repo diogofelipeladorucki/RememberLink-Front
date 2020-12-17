@@ -50,3 +50,30 @@ C:\Users\Emanuel Augusto\Desktop\DIOGO\RememberLink-Front\bin\Debug\RememberLink
 C:\Users\Emanuel Augusto\Desktop\DIOGO\RememberLink-Front\bin\Debug\RememberLink.application
 C:\Users\Emanuel Augusto\Desktop\DIOGO\RememberLink-Front\obj\Debug\RememberLink.exe.manifest
 C:\Users\Emanuel Augusto\Desktop\DIOGO\RememberLink-Front\obj\Debug\RememberLink.application
+C:\Users\Diogo\Source\Repos\RememberLink-Front\bin\Debug\RememberLink.exe.config
+C:\Users\Diogo\Source\Repos\RememberLink-Front\bin\Debug\RememberLink.exe.manifest
+C:\Users\Diogo\Source\Repos\RememberLink-Front\bin\Debug\RememberLink.application
+C:\Users\Diogo\Source\Repos\RememberLink-Front\bin\Debug\RememberLink.exe
+C:\Users\Diogo\Source\Repos\RememberLink-Front\bin\Debug\RememberLink.pdb
+C:\Users\Diogo\Source\Repos\RememberLink-Front\bin\Debug\LocalStorage.dll
+C:\Users\Diogo\Source\Repos\RememberLink-Front\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Diogo\Source\Repos\RememberLink-Front\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Diogo\Source\Repos\RememberLink-Front\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\Diogo\Source\Repos\RememberLink-Front\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Diogo\Source\Repos\RememberLink-Front\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Diogo\Source\Repos\RememberLink-Front\obj\Debug\RememberLink.csprojAssemblyReference.cache
+C:\Users\Diogo\Source\Repos\RememberLink-Front\obj\Debug\RememberLink.CATEGORIA.resources
+C:\Users\Diogo\Source\Repos\RememberLink-Front\obj\Debug\RememberLink.createAccount.resources
+C:\Users\Diogo\Source\Repos\RememberLink-Front\obj\Debug\RememberLink.CriarCategoria.resources
+C:\Users\Diogo\Source\Repos\RememberLink-Front\obj\Debug\RememberLink.criarLink.resources
+C:\Users\Diogo\Source\Repos\RememberLink-Front\obj\Debug\RememberLink.Home.resources
+C:\Users\Diogo\Source\Repos\RememberLink-Front\obj\Debug\RememberLink.Link.resources
+C:\Users\Diogo\Source\Repos\RememberLink-Front\obj\Debug\RememberLink.login.resources
+C:\Users\Diogo\Source\Repos\RememberLink-Front\obj\Debug\RememberLink.Properties.Resources.resources
+C:\Users\Diogo\Source\Repos\RememberLink-Front\obj\Debug\RememberLink.csproj.GenerateResource.cache
+C:\Users\Diogo\Source\Repos\RememberLink-Front\obj\Debug\RememberLink.csproj.CoreCompileInputs.cache
+C:\Users\Diogo\Source\Repos\RememberLink-Front\obj\Debug\RememberLink.exe.manifest
+C:\Users\Diogo\Source\Repos\RememberLink-Front\obj\Debug\RememberLink.application
+C:\Users\Diogo\Source\Repos\RememberLink-Front\obj\Debug\RememberLink.csproj.CopyComplete
+C:\Users\Diogo\Source\Repos\RememberLink-Front\obj\Debug\RememberLink.exe
+C:\Users\Diogo\Source\Repos\RememberLink-Front\obj\Debug\RememberLink.pdb
